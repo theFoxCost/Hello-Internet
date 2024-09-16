@@ -1,0 +1,387 @@
+body,
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html {
+    margin: 0;
+    width: 100%;
+}
+
+.nav-bar {
+    background-color: #000000;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    display: block;
+    margin-top: 0px;
+    z-index: 400000;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+}
+
+.TFC-logo {
+    aspect-ratio: 2/2;
+    width: 60px;
+    height: 60px;
+    margin-left: 15px;
+    margin-top: 6px;
+    transition: transform 1.5s ease;
+}
+
+.TFC-logo:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: behavior smooth;
+}
+
+@font-face {
+    font-family: myfont;
+    src: url(PressGothicPro.ttf);
+}
+
+.navigation a {
+    color: #FD4101;
+    /* White */
+    text-decoration: none;
+    font-size: 25px;
+    font-family: myfont;
+    padding-left: 30px;
+    transition: 0.5s;
+}
+
+.navigation a:hover {
+    color: #CCCCCC;
+    /* Light Grey */
+    text-decoration: underline;
+}
+
+.sidebar {
+    width: 100%;
+    display: block;
+    background-color: #181818;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    height: 100%;
+    padding-top: 10px !important;
+    top: 80px;
+    overflow-y: scroll !important;
+}
+
+.sidebar h2 {
+    font-family: caviar;
+    font-size: 26px;
+    color: #b2b2b2;
+    margin-bottom: 10px;
+    margin-left: 0px;
+}
+
+@font-face {
+    font-family: caviar;
+    src: url(CaviarDreams.ttf);
+}
+
+.sidebar ul {
+    line-height: 30px;
+    padding: 0;
+    margin: 0;
+    margin-left: 15px;
+    width: 100%;
+}
+
+.sidebar ul a {
+    font-weight: 100;
+    font-family: caviar;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    width: 100%;
+}
+
+.sidebar ul :hover {
+    background-color: #FD4101;
+}
+
+
+
+.sidebar::-webkit-scrollbar {
+    width: 12px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #181818;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    height: 100%;
+    top: 80px;
+    left: 0;
+    transition: transform 0.3s ease;
+    /* Smooth transition for hiding/showing */
+    transform: translateX(0);
+    /* Default position */
+}
+
+.sidebar.hidden {
+    transform: translateX(-100%);
+    /* Hide sidebar off-screen */
+}
+
+
+.toggle-button:hover {
+    color: #FFFFFF;
+}
+
+.toggle-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 400001;
+    background-color: #000000;
+    color: #b2b2b2;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.main {
+    padding: 100px 200px;
+    padding-left: 260px;
+}
+
+.content {
+    display: none;
+    padding: 100px 260px;
+    overflow-y: scroll;
+    width: 100%;
+    padding-right: 0;
+
+}
+
+.content.active {
+    display: block;
+}
+
+.sidebar.hidden {
+    display: none;
+}
+
+@font-face {
+    font-family: myfontx;
+    src: url(SpaceMono-Regular.ttf);
+}
+
+.content h2 {
+    font-family: myfontx;
+    background-color: #FD4101;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: underline;
+    color: white;
+
+}
+
+.content p {
+    font-family: myfontx;
+    color: #555;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+.content span {
+    padding-bottom: 7px;
+    color: #FD4101;
+    font-weight: bold;
+    font-size: 1.2em;
+
+    text-decoration: underline;
+}
+
+.content .jj {
+    background-color: #FD4101;
+    color: white;
+}
+
+.img1 {
+    display: block;
+    padding: 20px;
+}
+
+.img2 {
+    padding: 20px;
+    justify-content: center;
+}
+
+.ll a {
+    font-family: myfontx;
+    padding-left: 10px;
+    font-size: 1.2em;
+    color: #000000;
+    text-decoration: none;
+}
+
+.img3 {
+    width: 848px;
+    height: 420px;
+    padding-left: 0;
+}
+
+.content h2 {
+    font-family: myfontx;
+    background-color: #FD4101;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: underline;
+    color: white;
+}
+
+.content p {
+    font-family: myfontx;
+    color: #555;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+.content span {
+    padding-bottom: 7px;
+    color: #FD4101;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
+.content .jj {
+    background-color: #FD4101;
+    color: white;
+}
+
+.content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.content th,
+.content td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    font-family: myfontx;
+}
+
+.content th {
+    background-color: #FD4101;
+    color: white;
+    font-weight: bold;
+}
+
+.content tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.content tr:hover {
+    background-color: #ddd;
+}
+
+.content ul {
+    list-style-type: none;
+    /* Removes default bullet points */
+    padding: 0;
+}
+
+.content li {
+    font-family: myfontx;
+    color: #555;
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin-bottom: 5px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.content li:before {
+    content: "•";
+    /* Adds a custom bullet point */
+    color: #FD4101;
+    /* Bullet color */
+    position: absolute;
+    left: 0;
+    font-size: 1.2em;
+    /* Bullet size */
+    line-height: 1;
+}
+
+.content span {
+    color: #FD4101;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.ipo {
+    padding-left: 300px;
+}
+
+.ppo {
+    padding-left: 100px;
+}
+
+.mom {
+    padding-left: 450px;
+}
+
+.im {
+    width: 100%;
+    height: 420px;
+    padding-left: 0;
+}
+
+.mpl {
+    width: 100%;
+    height: auto;
+}
+
+.kok {
+    width: 520px;
+    height: 150px;
+}
+
+.mim {
+    height: 229px;
+    width: 380px;
+}
+
+.jij {
+    width: 500px;
+    height: 255px;
+}
+
+.jijo {
+    width: 550px;
+    height: 230px;
+}
+
+.polo {
+    height: 350px;
+    width: 550px;
+}

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="hacking.css">
+    <meta charset="UTF-8" />
+    <link rel="icon" href="tfc_logo.png">
+    <title>Mohamed Mossab</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar">
+            <a href="main.html">
+                <img class="TFC-logo" src="tfc_logo.png" alt="">
+            </a>
+            <nav class="navigation">
+                <a class="nav3" href="#Learn">Learn</a>
+                <a class="nav1" href="#Projects">Projects</a>
+                <a class="nav4" href="#About">About</a>
+                <a class="nav2" href="#Contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="sidebar" id="">
+        <h2>Basics</h2>
+        <ul>
+            <li><a href="#" onclick="showContent('WSL')">WSL</a></li>
+            <li><a href="#" onclick="showContent('SSH')">SSH</a></li>
+            <li><a href="#" onclick="showContent('SCP')">SCP</a></li>
+            <li><a href="#" onclick="showContent('SDK')">SDK</a></li>
+            <li><a href="#" onclick="showContent('name')">NAME</a></li>
+            <li><a href="#" onclick="showContent('DPKG')">DPKG</a></li>
+            <li><a href="#" onclick="showContent('Kex')">Kex</a></li>
+            <li><a href="#" onclick="showContent('cmd result')">result</a></li>
+            <li><a href="#" onclick="showContent('jhon the repper')">repper</a></li>
+            <li><a href="#" onclick="showContent('nmap')">nmap</a></li>
+            <li><a href="#" onclick="showContent('natcat')">natcat</a></li>
+            <li><a href="#" onclick="showContent('update/upgrade')">update/upgrade</a></li>
+            <li><a href="#" onclick="showContent('wireshark')">wireshark</a></li>
+            <li><a href="#" onclick="showContent('kismet')">kismet</a></li>
+            <li><a href="#" onclick="showContent('reaver')">reaver</a></li>
+            <li><a href="#" onclick="showContent('aircrack')">aircrack</a></li>
+            <li><a href="#" onclick="showContent('URH')">URH</a></li>
+            <li><a href="#" onclick="showContent('GRPX')">GRPX</a></li>
+            <li><a href="#" onclick="showContent('cmd')">cmd</a></li>
+            <li><a href="#" onclick="showContent('Kali linux')">Kali</a></li>
+            <li><a href="#" onclick="showContent('nethunter')">nethunter</a></li>
+            <li><a href="#" onclick="showContent('powershell')">powershell</a></li>
+            <li><a href="#" onclick="showContent('OSINT')">OSINT</a></li>
+
+        </ul>
+    </div>
+    <div class="main-content"></div>
+    <div id="SSH" class="content">
+        <h2>Understanding SSH (Secure Shell)</h2>
+        <p>
+            <span>Definition:</span><br>
+            &nbsp;SSH (Secure Shell) is a network protocol used to securely connect to and manage network devices over
+            an unsecured network. It provides a secure channel over an unsecured network by using strong encryption,
+            enabling safe communication between two networked devices.
+        </p>
+        <p>
+            <span class="jj">Key Features of SSH:</span><br>
+            <br>
+            <span>1. Encryption:</span><br>
+            &nbsp;SSH encrypts the session data, ensuring that all communications are secure and cannot be intercepted
+            by unauthorized parties.<br>
+            <br>
+            <span>2. Authentication:</span><br>
+            &nbsp;SSH supports multiple authentication methods, including password-based and key-based authentication,
+            enhancing the security of connections.<br>
+            <br>
+            <span>3. Integrity:</span><br>
+            &nbsp;SSH ensures data integrity by using message authentication codes (MACs) to verify that the data sent
+            between the client and server is not altered during transmission.<br>
+            <br>
+            <span>4. Port Forwarding:</span><br>
+            &nbsp;SSH supports port forwarding (tunneling), allowing users to securely forward network traffic from one
+            network to another over the SSH connection.<br>
+            <br>
+            <span>5. Secure File Transfers:</span><br>
+            &nbsp;SSH provides tools like SCP (Secure Copy Protocol) and SFTP (SSH File Transfer Protocol) for secure
+            file transfer between computers.<br>
+        </p>
+        <p>
+            <span class="jj">Common Uses of SSH:</span><br>
+            <br>
+            <span>1. Remote Administration:</span><br>
+            &nbsp;SSH is widely used by system administrators to remotely access and manage servers and network
+            devices.<br>
+            <br>
+            <span>2. Secure File Transfers:</span><br>
+            &nbsp;SCP and SFTP are used for transferring files securely between local and remote systems.<br>
+            <br>
+            <span>3. Tunneling and Port Forwarding:</span><br>
+            &nbsp;SSH tunnels are used to secure communications between applications, bypassing firewalls and accessing
+            remote services securely.<br>
+            <br>
+            <span>4. Secure Shell Access:</span><br>
+            &nbsp;Developers and IT professionals use SSH to securely access shell environments on remote machines for
+            development and testing purposes.<br>
+            <br>
+            <span>5. VPN and Proxy Replacement:</span><br>
+            &nbsp;SSH can be used to create secure VPN-like tunnels, allowing access to private networks over the
+            internet.<br>
+        </p>
+        <h2>Usage</h2>
+        <span>Follow these steps to connect to a server using SSH:</span>
+        <code>
+            <div class="comment line">#!/bin/bash</div>
+<div class="line"></div>
+
+<div class="comment line"># Update package list</div>
+<div class="command line">sudo apt update</div>
+<div class="line"></div>
+
+<div class="comment line"># Install OpenSSH client</div>
+<div class="command line">sudo apt install -y openssh-client</div>
+<div class="line"></div>
+
+<div class="comment line"># Prompt user for SSH connection details</div>
+<div class="command line">read -p "Enter the username for the SSH connection: " username</div>
+<div class="command line">read -p "Enter the hostname or IP address: " hostname</div>
+<div class="line"></div>
+
+<div class="comment line"># Use SSH to connect to the specified server</div>
+<div class="command line">ssh "${username}@${hostname}"</div>
+</code>
+    </div>
+    </div>
+    <div class="main-content"></div>
+    <div id="WSL" class="content">
+        <h2>Windows Subsystem for Linux (WSL)</h2>
+
+        <span>Overview</span>
+        <p>Windows Subsystem for Linux (WSL) is a compatibility layer developed by Microsoft that enables users to run a
+            Linux environment directly on a Windows machine. This includes running Linux command-line tools,
+            applications, and utilities without the need for a virtual machine or dual-boot setup.</p>
+
+        <h2>Key Features</h2>
+        <br>
+        <ul>
+            <li><strong>Integration:</strong> Seamlessly integrates with Windows, allowing you to use Linux tools
+                alongside your Windows applications.</li>
+            <li><strong>Performance:</strong> Offers near-native performance for running Linux applications by
+                leveraging the Windows kernel.</li>
+            <li><strong>Convenience:</strong> Provides easy access to Linux distributions through the Microsoft Store,
+                and you can install multiple distributions on a single system.</li>
+            <li><strong>File Access:</strong> Allows access to your Windows files from within the Linux environment and
+                vice versa.</li>
+        </ul>
+
+        <h2>Usage</h2>
+        <br>
+        <p>WSL is particularly useful for developers, system administrators, and those who prefer Linux tools and
+            environments but are working within a Windows ecosystem. It supports various Linux distributions, such as
+            Ubuntu, Debian, and Fedora, providing a versatile development and scripting environment.</p>
+        <br>
+        <h2>Getting Started</h2>
+        <br>
+        <p>To get started with WSL, you need to enable the WSL feature on your Windows machine and install your
+            preferred Linux distribution. Once set up, you can launch the Linux terminal and begin using Linux commands
+            and tools directly on your Windows system.</p>
+        <br>
+        <h2>WSL Setup Code</h2>
+        <code>
+            <div class="comment line"># Enable WSL Feature</div>
+            <div class="command line">wsl --install</div>
+            <div class="line"></div>
+    
+            <div class="comment line"># If WSL is already installed and needs updating</div>
+            <div class="command line">wsl --update</div>
+            <div class="line"></div>
+    
+            <div class="comment line"># Install a specific Linux distribution (e.g., Ubuntu)</div>
+            <div class="command line">wsl --install -d Ubuntu</div>
+            <div class="line"></div>
+    
+            <div class="comment line"># Launch the default Linux distribution</div>
+            <div class="command line">wsl</div>
+            <div class="line"></div>
+    
+            <div class="comment line"># Create a user account and password on the first run</div>
+            <div class="line"></div>
+    
+            <div class="comment line"># Update and upgrade Linux packages</div>
+            <div class="command line">sudo apt update</div>
+            <div class="command line">sudo apt upgrade</div>
+            <div class="line"></div>
+    
+            <div class="comment line"># Access Windows files from WSL</div>
+            <div class="command line">cd /mnt/c/Users/YourUsername</div>
+            <div class="line"></div>
+    
+            <div class="comment line"># Example command to list files in the current directory</div>
+            <div class="command line">ls -l</div>
+            <div class="line"></div>
+    
+            <div class="comment line"># Uninstall a specific Linux distribution</div>
+            <div class="command line">wsl --unregister Ubuntu</div>
+            <div class="line"></div>
+    
+            <div class="comment line"># Remove WSL feature (if needed)</div>
+            <div class="command line">dism.exe /online /disable-feature /featurename:Microsoft-Windows-Subsystem-Linux</div>
+            </code>
+    </div>
+    </div>
+    <div class="main-content"></div>
+    <div id="SCP" class="content">
+        <h2>Secure Copy Protocol (SCP)</h2>
+
+        <span>Understanding SCP</span>
+        <br>
+        <p>
+            <span>Definition:</span><br>
+            &nbsp;SCP (Secure Copy Protocol) is a network protocol used for securely transferring files between
+            hosts on a network.
+            It utilizes SSH (Secure Shell) to provide a secure, encrypted channel for file transfer, ensuring that
+            data and credentials
+            are protected from unauthorized access.
+        </p>
+        <br>
+
+        <p>
+            <span class="jj">Key Features of SCP:</span><br>
+            <br>
+            <span>1. Encryption:</span><br>
+            &nbsp;SCP encrypts both the data being transferred and the authentication information, ensuring that all
+            communications
+            are secure and cannot be intercepted by unauthorized parties.<br>
+            <br>
+            <span>2. Authentication:</span><br>
+            &nbsp;It uses SSH for authentication, which includes methods such as password-based and key-based
+            authentication,
+            enhancing the security of file transfers.<br>
+            <br>
+            <span>3. Command-Line Interface:</span><br>
+            &nbsp;SCP is commonly used through command-line tools, making it suitable for automation and scripting
+            tasks.<br>
+            <br>
+            <span>4. Cross-Platform Compatibility:</span><br>
+            &nbsp;SCP is available on various operating systems, including Unix, Linux, and Windows, making it
+            versatile for different environments.<br>
+        </p>
+
+        <p>
+            <span class="jj">Common Uses of SCP:</span><br>
+            <br>
+            <span>1. File Transfers:</span><br>
+            &nbsp;SCP is used to securely transfer files between a local machine and a remote server or between two
+            remote servers.<br>
+            <br>
+            <span>2. Secure Backup:</span><br>
+            &nbsp;It helps in creating secure backups of important files on remote servers.<br>
+            <br>
+            <span>3. System Administration:</span><br>
+            &nbsp;System administrators use SCP to manage files on remote systems securely.<br>
+        </p>
+        <br>
+        <h2>SCP (Secure Copy Protocol) Command Example</h2>
+        <code>
+    <div class="comment"># Copy a file from local to remote</div>
+    <div class="command">scp /path/to/local/file.txt username@remote_host:/path/to/remote/directory/</div>
+    <br>
+
+    <div class="comment"># Copy a file from remote to local</div>
+    <div class="command">scp username@remote_host:/path/to/remote/file.txt /path/to/local/directory/</div>
+    <br>
+
+    <div class="comment"># Copy a directory recursively from local to remote</div>
+    <div class="command">scp -r /path/to/local/directory/ username@remote_host:/path/to/remote/directory/</div>
+    <br>
+
+    <div class="comment"># Copy a directory recursively from remote to local</div>
+    <div class="command">scp -r username@remote_host:/path/to/remote/directory/ /path/to/local/directory/
+
+    </div>
+</code>
+    </div>
+    <div class="main-content"></div>
+    <div id="name" class="content">
+        <h2>Understanding Usernames in Operating Systems</h2>
+        <br>
+        <span>Definition</span>
+        <br>
+        <p>
+            <span>Username:</span><br>
+            &nbsp;A username is a unique identifier assigned to each user account within an operating system. It is
+            used
+            to distinguish between different users, enabling the operating system to manage access to files,
+            applications,
+            and system settings based on individual user permissions.
+        </p>
+        <br>
+        <h2>Purpose of Usernames</h2>
+        <br>
+        <p>
+            <span>1. User Identification:</span><br>
+            &nbsp;Usernames help identify and authenticate users logging into the system. They serve as a key part
+            of the login
+            process, often used in combination with a password to verify user identity.<br>
+            <br>
+            <span>2. Access Control:</span><br>
+            &nbsp;Usernames are linked to specific permissions and roles, allowing the system to control access to
+            resources
+            based on the user's identity. Different users may have varying levels of access to files, applications,
+            and system settings.<br>
+            <br>
+            <span>3. Personalization:</span><br>
+            &nbsp;Usernames allow the operating system to provide a personalized experience for each user, including
+            customized
+            settings, preferences, and files.<br>
+        </p>
+        <br>
+        <h2>Get Username Commands</h2>
+        <code>
+            <div class="comment line"># Get Username on Windows</div>
+            <div class="command line">whoami</div>
+            <div class="command line">echo %USERNAME%</div>
+            <div class="line"></div>
+    
+            <div class="comment line"># Get Username on Linux</div>
+            <div class="command line">whoami</div>
+            <div class="command line">echo $USER</div>
+            <div class="line"></div>
+    
+            <div class="comment line"># Get Username on macOS</div>
+            <div class="command line">whoami</div>
+            <div class="command line">id -un</div>
+            <div class="line"></div>
+    
+            <div class="comment line"># Get Username on Unix</div>
+            <div class="command line">whoami</div>
+            <div class="command line">logname</div>
+            <div class="line"></div>
+    
+            <div class="comment line"># Get Username with PowerShell (Windows)</div>
+            <div class="command line">[System.Security.Principal.WindowsIdentity]::GetCurrent().Name</div>
+        </code>
+    </div>
+    <div class="main-content"></div>
+    <div id="SSH" class="content">
+        <h1>Understanding SDKs (Software Development Kits)</h1>
+
+        <h2>Definition</h2>
+        <p>
+            <span>SDK (Software Development Kit):</span><br>
+            &nbsp;An SDK is a collection of software tools and libraries provided by hardware or software vendors to
+            help developers
+            build applications for specific platforms or environments. It typically includes APIs, documentation, code
+            samples, and other
+            resources necessary for developing software.
+        </p>
+
+        <h2>Purpose of SDKs</h2>
+        <p>
+            <span>1. Development Support:</span><br>
+            &nbsp;SDKs provide developers with the necessary tools and resources to create applications efficiently and
+            effectively. This
+            includes libraries, frameworks, and documentation that simplify the development process.<br>
+            <br>
+            <span>2. Platform Integration:</span><br>
+            &nbsp;SDKs facilitate the integration of applications with specific platforms or services, ensuring
+            compatibility and providing
+            access to platform-specific features and functionalities.<br>
+            <br>
+            <span>3. Enhanced Functionality:</span><br>
+            &nbsp;By using an SDK, developers can leverage pre-built components and tools, adding advanced features to
+            their applications
+            without having to develop them from scratch.<br>
+        </p>
+
+        <h2>How to Install an SDK</h2>
+        <p>
+            <span>1. Download SDK:</span><br>
+            &nbsp;Visit the official website of the SDK provider and download the SDK package appropriate for your
+            development environment.<br>
+            <br>
+            <span>2. Install SDK:</span><br>
+            &nbsp;Follow the installation instructions provided in the SDK documentation. This may involve running an
+            installer or extracting
+            the files to a specific directory.<br>
+            <br>
+            <span>3. Configure SDK:</span><br>
+            &nbsp;Set up the SDK in your development environment by configuring paths, environment variables, or project
+            settings as required
+            by the SDK documentation.<br>
+        </p>
+
+</body>
+<script src="script.js"></script>
+<script src="acdtive.js"></script>
+</body>

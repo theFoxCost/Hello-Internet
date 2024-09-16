@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body,
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Space Mono', monospace;
+}
+
+html {
+    margin: 0;
+    width: 100%;
+}
+
+.nav-bar {
+    background-color: #3498DB;
+    /* Sky Blue */
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    z-index: 999.9;
+}
+
+.TFC-logo {
+    width: 60px;
+    height: 60px;
+    margin-left: 15px;
+    margin-top: 6px;
+    transition: transform 1.5s ease;
+}
+
+.TFC-logo:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.navigation a {
+    color: #ECF0F1;
+    /* Light Gray */
+    text-decoration: none;
+    font-size: 25px;
+    padding-left: 30px;
+    transition: 0.5s;
+}
+
+.navigation a:hover {
+    color: #AED6F1;
+    /* Powder Blue */
+    text-decoration: underline;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 200px;
+    display: flex;
+    align-items: center;
+    background: url(hell.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.h2 {
+    padding-left: 4px;
+    display: inline-block;
+    font-size: 1.4em;
+    color: #ECF0F1;
+    /* Light Gray */
+    font-weight: 500;
+    background-color: #2C3E50;
+    /* Midnight Blue */
+    width: 255px;
+}
+
+.CE {
+    color: #AED6F1;
+    /* Powder Blue */
+    font-size: 3em;
+    padding-top: 0;
+    font-weight: 600;
+}
+
+.h3 {
+    font-size: 1.7em;
+    color: #2C3E50;
+    /* Midnight Blue */
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.main-button {
+    color: #2C3E50;
+    /* Midnight Blue */
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em;
+    letter-spacing: 2px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    background-color: #ECF0F1;
+    /* Light Gray */
+    transition: transform 0.7s ease;
+}
+
+.main-button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: #AED6F1;
+    /* Powder Blue */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
+}
+
+.social-links a {
+    color: #2C3E50;
+    /* Midnight Blue */
+    font-size: 1.7em;
+    padding-right: 30px;
+    margin-left: 5px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #2C3E50;
+    /* Midnight Blue */
+    font-size: 2.8em;
+    font-weight: 800;
+    padding: 20px;
+    letter-spacing: 3px;
+    background-color: #ECF0F1;
+    /* Light Gray */
+    text-decoration: underline;
+}
+
+.content {
+    background-color: #ECF0F1;
+    /* Light Gray */
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cards {
+    background-color: #ECF0F1;
+    /* Light Gray */
+    width: 22.25em;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 15%);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.2s ease;
+}
+
+.cards:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 6em;
+    color: #2C3E50;
+    /* Midnight Blue */
+    text-align: center;
+}
+
+.hx {
+    font-size: 1.8em;
+    color: #ECF0F1;
+    /* Light Gray */
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background-color: #2C3E50;
+    /* Midnight Blue */
+}
+
+.pp {
+    text-align: center;
+    color: #2C3E50;
+    /* Midnight Blue */
+    font-size: 1em;
+}
+
+.projects {
+    background-color: #ECF0F1;
+    /* Light Gray */
+}
+
+.projects .content {
+    margin-top: 30px;
+}
+
+.projects-card {
+    background-color: #AED6F1;
+    /* Powder Blue */
+    border: #2C3E50 5px solid;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.4s ease;
+}
+
+.projects-card:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.pro-img img {
+    width: 100%;
+    border: 2px solid #2C3E50;
+    /* Midnight Blue */
+}
+
+.projects-info {
+    padding: 1em;
+}
+
+.project-category {
+    font-size: 1.5em;
+    color: #2C3E50;
+    /* Midnight Blue */
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.more-details {
+    color: #ECF0F1;
+    /* Light Gray */
+    text-decoration: none !important;
+    transition: 0.7s ease-out;
+    margin-right: 8px;
+    background-color: #2C3E50;
+    /* Midnight Blue */
+    margin: 5px;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.more-details:hover {
+    color: #AED6F1;
+    /* Powder Blue */
+}
+
+span {
+    color: #2C3E50;
+    /* Midnight Blue */
+    font-size: 0.7em;
+    max-width: 220px;
+}
+
+.pro-img1 img {
+    height: 358px;
+    border: 2px solid #2C3E50;
+    /* Midnight Blue */
+}
+
+.pro-img2 img {
+    height: 358px;
+    border: 2px solid #2C3E50;
+    /* Midnight Blue */
+}
+
+.VA {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dang {
+    background-color: #ECF0F1;
+    /* Light Gray */
+    color: #2C3E50;
+    /* Midnight Blue */
+    font-size: 1.2em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 62px;
+    width: 194.95px;
+    margin-top: 15px;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+    letter-spacing: 3px;
+    text-decoration: none;
+    border: #2C3E50 6px solid;
+    /* Midnight Blue */
+}
+
+.dang:hover {
+    background-color: #2C3E50;
+    /* Midnight Blue */
+    border: #ECF0F1;
+    /* Light Gray */
+    color: #ECF0F1;
+    /* Light Gray */
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+}
+
+.contact .icon {
+    font-size: 4.5em !important;
+}
+
+.contact .info p {
+    font-size: 1.2em;
+}
+
+.pp {
+    text-align: center;
+    padding-top: 5px;
+}
+
+footer {
+    display: flex;
+    background-color: #19747E;
+    /* Deep Teal */
+    color: #ECF0F1;
+    /* Light Gray */
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.footer .copyright {
+    margin: 0;
+}
+
+.footer .social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.footer .social-links a {
+    color: #ECF0F1;
+    /* Light Gray */
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer .social-links a:hover {
+    color: #AED6F1;
+    /* Powder Blue */
+}
